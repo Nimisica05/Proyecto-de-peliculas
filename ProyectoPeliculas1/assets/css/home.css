@@ -1,0 +1,122 @@
+body {
+    background-color: #222;
+    font-family: sans-serif;
+    color: #999;
+    margin: 20px;
+}
+
+header {
+    background-color: #222;
+    color: #999;
+    margin: auto;
+    padding: 0px;
+
+}
+
+h1 {
+    margin: 20px;
+    padding: 0px;
+    text-align: center;
+    letter-spacing: 2px;
+    line-height: 10px;
+    font-weight: bolder;
+}
+
+a {
+    text-decoration: none;
+    color: #999;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    font-size: 17px;
+
+    ul, li, a {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        color: #999;
+    }
+    
+    .registerlogin {
+        display: flex;
+        flex-direction: column; 
+    }
+}
+
+.buscar-form {
+    display: flex; 
+    align-items: center; 
+}
+
+.buscar {
+    background-color: #999;
+    margin-top: 5px;
+    border: none;
+    border-radius: 15px; 
+    height: 30px;
+    text-align: center;
+}
+
+.buscar__bottom {
+    background-color: #999; 
+    border: none; 
+    margin-top: 5px;
+    border-radius: 15px; 
+    height: 30px;
+    cursor: pointer; 
+}
+
+.buscar__bottom:hover {
+    color: #999;
+    background-color: #222;
+}
+
+
+.container_movies {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: flex-start; 
+}
+
+.container_streaming {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: flex-start;
+}
+
+.movie {
+    margin: 10px;
+    flex: 0 0 auto;
+}
+
+.plataformas {
+    margin: 10px;
+    flex: 0 0 auto;
+    display: flex; /* Asegúrate de que cada plataforma esté en un contenedor flex */
+    flex-direction: column; /* Esto hace que el título y el enlace estén uno encima del otro */
+    align-items: center; /* Centra el contenido dentro de cada plataforma */
+}
+
+
+.movie h2,
+.plataformas h2 {
+    color: #999;
+    font-size: 26px;
+    font-weight: bolder;
+    letter-spacing: 2px;
+}
+
+.movie-link,
+.plataformas-link {
+    font-size: 20px;
+    color: #999;
+    text-decoration: none;
+    outline: none;
+    display: block; 
+    margin-top: 20px; 
+    max-width: 150px; 
+    word-wrap: break-word; 
+    text-align: center;
+}
